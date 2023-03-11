@@ -1,6 +1,4 @@
-# template
- Template is my own customizzed laravel app, that will ease development faster.
-To clone the app 
+# Centre for Information Technology and Development
 
 https://github.com/abuiman/citad-management-system.git
 
