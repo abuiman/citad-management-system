@@ -8,7 +8,7 @@ if(isset($_POST['from']) && $_POST['to']){
 @section('title', 'Events of the week') 
 
 @section('content_header')
-    <h1>My Events</h1>
+    <h1>All Events</h1>
 @stop
 
 @section('content')
