@@ -2,7 +2,7 @@
  Template is my own customizzed laravel app, that will ease development faster.
 To clone the app 
 
-https://github.com/abuiman/template.git
+https://github.com/abuiman/citad-management-system.git
 
 Make sure you have run:
 
@@ -17,8 +17,6 @@ Then run
 composer global update
 
 Try to to give permission for that vendor folder
-
-sudo chmod -R 777 vendor
 
 update your composer also
 
