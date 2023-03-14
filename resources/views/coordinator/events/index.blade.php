@@ -30,6 +30,7 @@ if(isset($_POST['from']) && $_POST['to']){
                         <tr>
                                 <td>From:</td>
                                 <td><input type="date" name="from" class="form-control" /></td>
+                                <td>To:</td>
                                 <td><input type="date" name="to" class="form-control" /></td>                               
                                 <td> &nbsp;</td>
                                 <td><button type="submit" class="btn btn-primary" id="fetch_month"> Fetch Record</button></td>
@@ -61,8 +62,8 @@ if(isset($_POST['from']) && $_POST['to']){
                                 <td>{{ $n++ }}</td>
                                 <td>{{strtoupper($event->event)}}</td>
                                 <td>{{$event->hall_id}}</td>
-                                <td>{{date('D d-m-Y', strtotime($event->event_date)) .' - '. date('D d-m-Y', strtotime($event->event_end_date))}}</td>
-                                <td>{{date('h:i A', strtotime($event->event_time))}}</td>
+                                <td>{{date('D d-m-Y', strtotime($event->event_date)) .' to '. date('D d-m-Y', strtotime($event->event_end_date))}}</td>
+                                <td>{{date('h:i A', strtotime($event->event_time)) .' to '. date('h:i A', strtotime($event->event_end_time))}}</td>
                                 <td>{{$event->email}}</td>
                                 <td>
                                     <!-- <a href="{{ route('events.edit',$event->id) }}">
